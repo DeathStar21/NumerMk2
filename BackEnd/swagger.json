@@ -1,0 +1,91 @@
+{
+   "definition": {
+      "openapi": "3.0.0",
+      "servers": [
+         {
+            "description": "SwaggerHub API Auto Mocking",
+            "url": "http://localhost:7258/"
+         }
+      ],
+      "info": {
+         "description": "This is a Numerical Method API",
+         "version": "1.0.0",
+         "title": "Numerical Method API",
+         "contact": {
+            "email": "qlergaming@gmail.com"
+         }
+      },
+      "tags": [
+         {
+            "name": "developers",
+            "description": "Operations available to regular developers"
+         }
+      ],
+      "paths": {
+         "/bisection": {
+            "get": {
+               "tags": [
+                  "developers"
+               ],
+               "summary": "searches bisection",
+               "description": "searches bisection\n",
+               "responses": {
+                  "200": {
+                     "description": "search results matching criteria"
+                  },
+                  "400": {
+                     "description": "bad input parameter"
+                  }
+               }
+            }
+         },
+         "/falseposition": {
+            "get": {
+               "tags": [
+                  "developers"
+               ],
+               "summary": "searches falseposition",
+               "description": "searches falseposition\n",
+               "responses": {
+                  "200": {
+                     "description": "search results matching criteria"
+                  },
+                  "400": {
+                     "description": "bad input parameter"
+                  }
+               }
+            }
+         },
+         "/linearregression": {
+            "get": {
+               "tags": [
+                  "developers"
+               ],
+               "summary": "searches linearregression",
+               "description": "searches linearregression\n",
+               "responses": {
+                  "200": {
+                     "description": "search results matching criteria"
+                  },
+                  "400": {
+                     "description": "bad input parameter"
+                  }
+               }
+            }
+         }
+      },
+      "securityDefinitions": {
+         "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "header"
+         }
+      },
+      "security": [
+         {
+            "api_key": []
+         }
+      ]
+   },
+   "apis": []
+}
