@@ -24,7 +24,7 @@ jobs:
       run: |
         cd BackEnd
         npm install
-    - name: test-api
+    - name: test-test
       run: |
         cd BackEnd
         npm test
