@@ -54,11 +54,15 @@ function authorToken(req, res, next) {
         }
     }
 }
+App.get("/",(req, res) => {
+    res.send("Hello Qler");
+})
 
 App.get("/createToken/:admin", (req, res) => {
 
     let token = jwt.sign({ admin: req.params.admin }, secretKeys);
     res.send(token)
+
 })
 //Bisection
 App.get("/bisection", (req, res) => {
@@ -114,9 +118,7 @@ App.get("/linearregression-doc", authorToken, (req, res) => {
     })
 })
 
-App.get("/",(req, res) => {
-    res.send("HelloWorld");
-})
+
 const swaggerDocument = swaggerjsdoc(doc)
 App.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

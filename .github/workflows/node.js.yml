@@ -16,6 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js 18
       uses: actions/setup-node@v3
       with:
@@ -24,6 +25,10 @@ jobs:
       run: |
         cd BackEnd
         npm install
+    - name: test webs
+        run: |
+          cd web
+          npm test
     - name: test-test
       run: |
         cd BackEnd
