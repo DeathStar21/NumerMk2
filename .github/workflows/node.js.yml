@@ -38,4 +38,4 @@ jobs:
         cd BackEnd
         npm test
     - name: test docker
-        run: docker-compose build
+      run: docker-compose build
