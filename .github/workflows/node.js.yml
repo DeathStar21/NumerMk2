@@ -30,9 +30,9 @@ jobs:
         cd my-app
         npm install
     - name: testfront
-        run: |
-          cd my-app
-          npm test
+      run: |
+        cd my-app
+        npm test
     - name: testback
       run: |
         cd BackEnd
