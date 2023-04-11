@@ -25,11 +25,11 @@ jobs:
       run: |
         cd BackEnd
         npm install
-    - name: test webs
+    - name: testfront
         run: |
           cd web
           npm test
-    - name: test-test
+    - name: testback
       run: |
         cd BackEnd
         npm test
