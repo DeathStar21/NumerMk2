@@ -12,8 +12,8 @@ var mysql = require('mysql');
 var con = mysql.createPool({
     host: process.env.DB_HOST || "127.0.0.1",
     user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "1234",
-    database: process.env.DB_NAME || "numerical",
+    password: process.env.DB_PASSWORD || "QlerOrder66",
+    database: process.env.DB_NAME || "numer",
     port: process.env.DB_PORT || "3306"
 });
 
